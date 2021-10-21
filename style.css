@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Noto+Sans+Mono:wght@300;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+body {
+    background-color: #2d3436;
+    background-image: linear-gradient(90deg, #2d3436 0%, #000000 74%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: white;
+    margin: 0;
+    font-family: 'Noto Sans Mono', monospace;
+}
+td {
+    font-family: 'Comic Neue', cursive;
+    border: 5px solid white;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 4rem;
+    cursor: pointer;
+    color: white;
+}
+table {
+    display: block;
+    position: relative;
+    border-collapse: collapse;
+    margin-top: 100px;
+    font-size: 3rem;
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+table tr:first-child td {
+    border-top: none;
+}
+table tr:last-child td {
+    border-bottom: none;
+}
+table tr td:first-child {
+    border-left: none;
+}
+table tr td:last-child {
+    border-right: none;
+}
+.endgame {
+    display: none;
+    font-family: 'Noto Sans Mono', monospace ;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+button {
+    display: none;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;    
+    margin: 1rem auto;
+    background: rgb(20, 143, 20);
+    color: gold;
+    font-family: 'Noto Sans Mono', monospace;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+button:hover {
+    background: darkgreen;
+    transition: background 0.3s ease-out;
+}
+p {
+    color:gold;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-family: 'Noto Sans Mono', monospace;
+    animation: typing 2s steps(40);
+    overflow: hidden;
+    text-align: center;
+    line-break: normal;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 40ch;
+    }
+}
